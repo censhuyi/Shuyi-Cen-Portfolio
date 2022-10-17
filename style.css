@@ -1,14 +1,23 @@
-h1{font-size: 24px;}
-h2{font-size:18px;}
+@font-face {
+    font-family: Fuzzy ;
+    src: url(fonts/FuzzyBubbles-Bold.ttf);
+}
+h1{font-size: 24px;
+font-family: FuzzyBubbles;
+font-style: Bold;}
+h2{font-size:18px;
+font-family: FuzzyBubbles;
+font-style: normal;}
 h3{font-size:16px;}
-p{font-size: 12px;}
+p{font-size: 14px;}
 
 
 *{
     margin:0;
     padding:0;}
+
 body{
-    background-color: lightgrey;
+    background-color: rgba(207, 218, 182, 0.236);   
 }
 
 nav{
@@ -17,24 +26,58 @@ nav{
     background-color: white;
 }
 
-ul{
-margin-left: 80px; 
+nav p{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgba(65, 75, 42, 0.236),
+    font-size: 14px;
+    line-height: 55px;
+    float: :left;
+    padding: 0px 20px;
 }
 
-ul li{
+nav ul{
+float: left;
+margin-left: 10%;
+}
+
+nav ul li{
     list-style:none;
-    display: inline-block;
     float: left;
-    line-height: 80px;
+    position: relative;
+
 }
 
-ul li a {
+nav ul li a {
     display:block;
     text-decoration: none;
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     color: #1e1e1e;
-    padding:0 20px; 
+    padding:30px 24px; 
+}
+
+nav ul li ul {
+    display:none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;4px;4px;4px;
+}
+
+nav ul li:hover ul {
+    display:block;
+}
+
+
+nav ul li ul li {
+    width: 185px;
+    border-radius: 4px;4px;4px;4px;
+}
+nav ul li ul li a {
+    padding:8px 14px; 
+}
+nav ul li ul li a:hover {
+    color: green;
 }
 
 .logo{
@@ -48,3 +91,21 @@ ul li a:hover {
     color: green;
 }
 
+
+
+
+ *{
+    box-sizing: border-box;
+ }
+ .preschool{
+    width: 40%;
+    float: left;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding:30px;
+ }
+
+ .preschool img{
+    height: auto;
+
+ }
