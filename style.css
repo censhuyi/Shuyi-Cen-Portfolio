@@ -107,5 +107,17 @@ ul li a:hover {
 
  .preschool img{
     height: auto;
+ }
+
+ .myself{
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding:50px;
+ }
+
+ .myself img{
+    height: auto;
 
  }
