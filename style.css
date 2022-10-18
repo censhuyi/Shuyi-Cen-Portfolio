@@ -184,6 +184,10 @@ ul li a:hover {
     line-height: 30px;
  }
 
+.icon{
+    float: left;
+    
+}
 /*footer*/
 footer{
     width: 100%;
