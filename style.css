@@ -117,5 +117,29 @@ ul li a:hover {
 
  .myself img{
     height: auto;
+}
 
+.chinese{
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding:30px;
+ }
+
+ .chinese img{
+    height: auto;
+ }
+
+ .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+ .mapSection{
+    position: relative;
+    height:50px;
+    width:50px;
  }
