@@ -1,3 +1,6 @@
+*{box-sizing:border-box;}
+
+body{ 
 @font-face{
     src:url(css/fonts/FuzzyBubbles-Regular.ttf);
     font-family: FuzzyBubbles
@@ -15,12 +18,13 @@ h1{
     font-weight: 100;
     text-align: left;
     color:  #6E7D75;
+    margin: 0;
 }
 
 h2{
     font-size:20px;
     font-family: FuzzyBubbles;
-    font-style: normal;
+    font-style: normal;s
     text-align: left;
     text-indent: 10px;
     color: #6E7D75;
@@ -37,9 +41,10 @@ p{
     text-decoration: none;
     text-align: left;
     text-indent: 20pt;
-    line-height: 20px;
+    line-height: 1.6;
+    margin: 0 0 1rem; 
 }
-
+}
 /*header*/
 
 *{
@@ -48,12 +53,6 @@ p{
 
 body{
     background-color: rgba(207, 218, 182, 0.236);   
-}
-
-.wrapper{
-    margin: 0 auto 0 60px;
-    width:1000px;
-    background-color: red;
 }
 
 nav{
