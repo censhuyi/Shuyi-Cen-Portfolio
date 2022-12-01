@@ -206,7 +206,6 @@ footer ul li{
    display:block;
    list-style-type: none;
    line-height: 20px;
-   padding: 0 1em;
 }
 
 footer ul li a{
@@ -214,7 +213,6 @@ footer ul li a{
     font-size: 14px;
     color: #fff;
     text-decoration: none;
-    padding: 0 1em;
  }
 
  .logo-2{
