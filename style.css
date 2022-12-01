@@ -1,6 +1,5 @@
 *{box-sizing:border-box;}
 
-body{ 
 @font-face{
     src:url(css/fonts/FuzzyBubbles-Regular.ttf);
     font-family: FuzzyBubbles
@@ -10,7 +9,6 @@ body{
     src:url(css/fonts/SourceCodePro-VariableFont_wght.ttf);
     font-family: Var;
 }
-
 
 
 h1{
@@ -26,7 +24,7 @@ h1{
 h2{
     font-size:20px;
     font-family: FuzzyBubbles;
-    font-style: normal;s
+    font-style: normal;
     text-align: left;
     text-indent: 10px;
     color: #6E7D75;
@@ -46,7 +44,7 @@ p{
     line-height: 1.6;
     margin: 0 0 1rem; 
 }
-}
+
 /*header*/
 
 *{
@@ -65,10 +63,10 @@ nav{
 
 nav p{
     font-family: 'Courier New', Courier, monospace;
-    color:rgba(65, 75, 42, 0.236),
+    color:rgba(65, 75, 42, 0.236);
     font-size: 14px;
     line-height: 55px;
-    float: :left;
+    float: left;
     padding: 0px 20px;
 }
 
@@ -95,11 +93,11 @@ nav ul li a {
 }
 
 nav ul li ul {
-    display:none;
+    display: none;
     position: absolute;
     background-color: white;
     padding: 10px;
-    border-radius: 4px;4px;4px;4px;
+    border-radius: 4px 4px 4px  4px;
 }
 
 nav ul li:hover ul {
@@ -108,7 +106,7 @@ nav ul li:hover ul {
 
 nav ul li ul li {
     width: 185px;
-    border-radius: 4px;4px;4px;4px;
+    border-radius: 4px 4px 4px 4px;
 }
 nav ul li ul li a {
     padding:8px 14px; 
@@ -208,6 +206,7 @@ footer ul li{
    display:block;
    list-style-type: none;
    line-height: 20px;
+   padding: 0 1em;
 }
 
 footer ul li a{
@@ -215,6 +214,7 @@ footer ul li a{
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+    padding: 0 1em;
  }
 
  .logo-2{
