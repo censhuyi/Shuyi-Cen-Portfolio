@@ -1,11 +1,16 @@
 *{
     box-sizing:border-box;
     margin:0;
-    padding:0;}
+    padding:0;
+    list-style: none;
+    outline: 0;
+    text-decoration: none;
+    font-family: FuzzyBubbles;
+}
 
 @font-face{
     src:url(css/fonts/FuzzyBubbles-Regular.ttf);
-    font-family: FuzzyBubbles
+    font-family: FuzzyBubbles;
 }
 
 @font-face{
@@ -48,59 +53,109 @@ p{
 }
 
 body{
-    background-color: forestgreen;
+    background-color: #fff;
     height: 100vh;
 }
 
 nav{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: sans-serif;
-    padding: 15px;
-    background: linear-gradient(#808080, #3fada8);
+    height: 80px;
+    line-height: 75px;
+    padding: 0 15%;
+    background: #6E7D75;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;   
-}
-
-.list{
+nav .nav-list{
     display: flex;
-    list-style: none;
-    gap: 25px;
 }
 
-#toggler, label{
-    display: none;
-}
-label i{
-    color: white;
-}
-
-@media screen and (max-width: 650px){
-    .menu { 
-        width:100%;
-        max-height: 0;
-        overflow: hidden;}
-label{
-    display: inline-flex;
-}
-#toggler:checked~.menu{
-    max-height: 100%;
-}
-.list{
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
+nav .nav-list .nav-item{
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    transition: .4s;   
 }
 
+nav .nav-list .nav-item:hover {
+    background: yellow;}
 
+nav .nav-list .nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 935px) {
+    nav{
+        padding: 0 2rem;
+    }
+
+nav .nav-list .nav-item {
+    padding: 0 20px;
+}
+}
+
+@media (max-width: 675px) {
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #404040;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+    }
+    nav .nav-list .nav-item{
+        padding-left: 35px;
+    }
+
+    nav .navbar-toggler{
+        display: grid !important;     
+    }
+}
+    nav .navbar-toggler{
+        display: none;
+        height: min-content;
+        margin: 18px -10px 0 0 ;
+        cursor: pointer;
+    }
+
+    nav .navbar-toggler .bar {
+        width: 40px;
+        height: 5px;
+        margin-bottom: 10px;
+        background: #fff;
+        border-radius: 10%;
+        transition: .4s; 
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked ~ nav .nav-list {
+        transform: translateY(0);
+    }
+
+    input:checked ~ nav .navbar-toggler{
+        margin-top: 35px;
+    }
+
+    input:checked ~ nav .navbar-toggler .bar:nth-child(1){
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    input:checked ~ nav .navbar-toggler .bar:nth-child(2){
+        display: none;
+    }
+
+    input:checked ~ nav .navbar-toggler .bar:nth-child(3){
+        transform: rotate(-45deg);
+    }
 
 
 
