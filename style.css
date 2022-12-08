@@ -11,6 +11,8 @@
 }
 
 
+
+
 h1{
     font-size: 24px;
     font-family: Impact,'Arial Narrow Bold', sans-serif;
@@ -52,86 +54,71 @@ p{
     padding:0;}
 
 body{
-    background-color: rgba(207, 218, 182, 0.236);   
+    background-color: rgba(207, 218, 182, 0.236); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-nav{
+.nav-bar{
     width: 100%;
-    height: 73px;
-    background-color: white;
-}
-
-nav p{
-    font-family: 'Courier New', Courier, monospace;
-    color:rgba(65, 75, 42, 0.236);
-    font-size: 14px;
-    line-height: 55px;
-    float: left;
-    padding: 0px 20px;
-}
-
-nav ul{
-float: left;
-margin-left: 20%;
-width:fit-content;
-}
-
-nav ul li{
-    list-style:none;
-    float: left;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     position: relative;
-
+    background-color: #6E7D75;
+    padding: 12px 20px; 
 }
 
-nav ul li a {
-    display:block;
+.logo{width: 100px;}
+.menu{display:flex;}
+.menu li{ padding-left:30px;}
+.menu li a {
+    display:inline-block;
     text-decoration: none;
-    font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #1e1e1e;
-    padding:30px 14px; 
-}
+    color: floralwhite;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;}
 
-nav ul li ul {
-    display: none;
+.menu li a::after{
+    content: "";
+    position: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+    transition: 0.15s ease-out;}
+
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu{
     position: absolute;
-    background-color: white;
-    padding: 10px;
-    border-radius: 4px 4px 4px  4px;
-}
+    color:blue;
+    cursor:pointer;
+    font-size: 1.5rem;
+    display: none;}
 
-nav ul li:hover ul {
-    display:block;
-}
+.open-menu{
+    top: 50%;
+    right:20px;
+    transform: translateY(-50%);}
 
-nav ul li ul li {
-    width: 185px;
-    border-radius: 4px 4px 4px 4px;
-}
-nav ul li ul li a {
-    padding:8px 14px; 
-}
-nav ul li ul li a:hover {
-    color: green;
-}
+.close-menu{ 
+    top:20px;
+    right: 20px}
 
-.logo{
-    position: absolute;
-    height:auto;
-    left: 0px;
-    width: 100px;
-    text-align: left;
-}
 
-ul li a:hover {
-    color: green;
-}
 
-/*front page*/
 
-*{
-    box-sizing: border-box;
- }
+
+
+
+
+
  .preschool{
     width: 40%;
     float: left;

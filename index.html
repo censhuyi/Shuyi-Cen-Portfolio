@@ -8,26 +8,23 @@
       <link rel="stylesheet" href="style.css"/>
    </head>
    <body>
-      <header>
-         <div class="logo">
-            <main>
-               <a href="index.html">
-                  <image src="image/logo2.png" width="70">
-               </a>
-         </div>
+     <header>
          <nav>
-         <ul>
+         <ul class="nav-bar">
+         <li class="logo"><a href="index.html">
+                  <image src="image/logo2.png" width="70"></a></li>
+         <input type="checkbox" id="check">
+         <span class="menu">
          <li><a href="index.html">Home</a></li>
-         <li><a href="Gallery.html">Gallery</a>
-         <ul>
-         <li><a href="Interior Design.html">Interior Design</a></li>
-         <li><a href="drawings.html">Drawings</a></li>
-         </ul>
-         </li>
+         <li><a href="gallery.html">Gallery</a></li>
          <li><a href="about_me.html">About</a></li>
-         <li><a href="Contact.html">Contact</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <label for="check" class="close-menu"><i class="fas fa-times"></i></lable>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
          </ul>
          </nav>
+      <!--
       <div class="container">
          <div class="gallery-container">
          <div class="gallery-item">
@@ -78,3 +75,5 @@
 <!--TO DO LIST:
    2. Add more photos
    4. start add links to those photos>
+-->
+
