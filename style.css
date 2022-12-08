@@ -140,7 +140,7 @@ nav .nav-list .nav-item {
         transform: translateY(0);
     }
 
-    input:checked ~ nav .navbar-toggler{
+    input:checked ~ nav .navbar-toggler {
         margin-top: 35px;
     }
 
