@@ -1,3 +1,7 @@
+@import url('');
+
+
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -52,6 +56,12 @@ ul{
     text-decoration: underline;
     font-weight: bold;
 }
+
+body , html {
+    overflow-x: hidden;
+}
+
+
 
 /* Navbar*/
 .navbar {
@@ -267,27 +277,6 @@ p{
 
 
 
-
-
-
-
-
- 
-
- /*about page*/
-
- .myself{
-    width: 50%;
-    float: left;
-    margin-left: 10px;
-    margin-right: 20px;
-    padding:20px;
- }
-
- .myself img{
-    height: auto;
-}
-
 /*contact page*/
 
  .center{
@@ -304,4 +293,12 @@ p{
 .icon{
     float: left;
     
+}
+
+img{
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
 }
