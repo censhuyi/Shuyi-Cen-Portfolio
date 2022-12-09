@@ -16,15 +16,14 @@
     font-family: Var;
 }
 
-/* h1{
+h1{
     font-size: 24px;
-    font-family: Impact,'Arial Narrow Bold', sans-serif;
-    font-style: Bold;
+    font-family: Impact,'Arial', sans-serif;
     font-weight: 100;
     text-align: left;
     color: white;
     margin: 0;
-} */
+}
 
 h2{
     font-size:20px;
@@ -117,7 +116,6 @@ header{
 }
 
 .header-content h1{
-    font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -173,6 +171,12 @@ h4{
     margin: 20px auto;
 }
 
+h5{
+    font-size: 18px;
+    color:#484872;
+    margin: 20px auto;
+}
+
 p{
     color: #1d1d30;
 }
@@ -211,9 +215,20 @@ p{
     margin-top: 40px;
 }
 
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #6E7D75;
+    text-align: center;
+}
 
-
-
+.footer p{
+    color: white;
+    margin: 20px auto;
+    padding:20px auto;
+}
 
 
 
@@ -266,29 +281,8 @@ p{
 
 
 
- .preschool{
-    width: 40%;
-    float: left;
-    margin-left: 30px;
-    margin-right: 40px;
-    padding:30px;
- }
 
- .preschool img{
-    height: auto;
- }
-
- .chinese{
-    width: 40%;
-    float: left;
-    margin-left: 20px;
-    margin-right: 40px;
-    padding:30px;
- }
-
- .chinese img{
-    height: auto;
- }
+ 
 
  /*about page*/
 
@@ -320,49 +314,4 @@ p{
 .icon{
     float: left;
     
-}
-/*footer*/
-footer{
-    width: 100%;
-    height: 100%;
-    background-color: #6E7D75;
-    overflow: hidden;
-    margin-top: 50px;
-}
-
-footer ul{
-    width:fit-content;
-    float:left;
-    padding-left: 30px;
-}
-
-footer ul li{
-   display:block;
-   list-style-type: none;
-   line-height: 20px;
-}
-
-footer ul li a{
-    font-family:FuzzyBubbles;
-    font-size: 14px;
-    color: #fff;
-    text-decoration: none;
- }
-
- .logo-2{
-    width: 70px;
-   float: right;
-   vertical-align: middle;
-}
-
-.logo-2 img{
-    width: 100%;
-    margin:0;
-    padding:0;
-}
-
-.copyright{
-    color: #fff;
-    text-align: center;
-    padding:100px;
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Shuyi Cen's Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body style="background-color: #eae2db;">
+
+      <!--Navbar-->
+      <nav class="navbar">
+      <h1 class="logo"><a href="index.html">SHUYI CEN</a></h1>
+      <ul class="nav-links">
+         <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li class="ctn"><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="./image/menu-btn.png" alt="" class="menu-btn">
+      </nav>
+      <!-- end navbar -->
+
+      <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+  
+        menuBtn.addEventListener('click',()=>{
+           navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+  
+
+<section>
+    <h1>Office Design</h1>
+    <div class="line"></div>
+    <div class="row">
+        <div class="col">
+    <img src="./image/office-design concept.jpeg">
+    <h5>Design Concept</h5>
+    <p>The One is a luxury wedding planning company with a romantic atmosphere. The spac eemulates the atmosphere clients want in their wedding by natural elements with flowers,greenery, and country style with enchanting serenity. The One focuses on sustainability andproviding creative and unique moments for the perfect wedding. They have a team-basedwork culture that emphasizes employee participation on all levels and encourages opencommunication, passion, and innovation. Their goal is to ease clients and make the process assmooth as possible. </p>
+</section>
+
+<section>
+    <h5>Perspectives</h5>
+    <div class="row">
+        <div class="col">
+    <img src="./image/Office design-01.jpeg">
+    <p>Relaxing Area</p>
+
+    <div class="row">
+        <div class="col">
+    <img src="./image/greeting area.jpeg">
+    <p>Greeting Area</p>
+
+    <div class="row">
+        <div class="col">
+    <img src="./image/Reception.jpeg">
+    <p>Reception</p>
+
+    <div class="row">
+        <div class="col">
+    <img src="./image/In-the-between-space.jpeg">
+    <p>In the between space</p>
+
+</section>
+
+     <section class="footer">
+        <p>
+          copyright &copy; 2022 by Shuyi Cen
+        </p>
+     </section>
+
+     
+     </body>
+  </html> 
