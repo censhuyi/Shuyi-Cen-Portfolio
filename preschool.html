@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Shuyi Cen's portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"
-</head>
-<body>
-    <div class="logo">
-        <a href="index.html">
-            <image src="image/logo3.png" width="70"></a>
-    </div>
-    <nav>
-         <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#Gallery.html">Gallery</a>
-            <ul>
-                <li><a href="Interior Design.html">Interior Design</a></li>
-                <li><a href="work progress.html">Work Progress</a></li>
-                <li><a href="drawings.html">Drawings</a></li>
-            </ul>
-        </li>
-        <li><a href="About me.html">About</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-    </ul>
-    </nav>
-</body> 
-</html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Shuyi Cen's Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body style="background-color: #eae2db;">
 
+      <!--Navbar-->
+      <nav class="navbar">
+      <h1 class="logo"><a href="index.html">SHUYI CEN</a></h1>
+      <ul class="nav-links">
+         <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li class="ctn"><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="./image/menu-btn.png" alt="" class="menu-btn">
+      </nav>
+      <!-- end navbar -->
+
+      <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+  
+        menuBtn.addEventListener('click',()=>{
+           navlinks.classList.toggle('mobile-menu')
+        })
+     </script>
+  
+
+<section>
+    <h1>Pre-School Design</h1>
+    <div class="line"></div>
+    <div class="row">
+        <div class="col">
+    <img src="./image/preschool-concept .jpeg">
+    <h5>Design Concept</h5>
+    <p>The design of this preschool is inspired by elements of nature with the intention of creating a relaxing and inviting atmosphere for children to explore. The interior is shaped like a tree, with the trunk splitting into separate parts producing different rooms of discovery.The central connection for this entire design is the geometric climbing cubes encouraging the children to take steps toward new areas of realization. With the tree representing the passage of time, its overall message is to encourage the children to learn, grow and develop. </p>
+</section>
+
+<section>
+    <h5>Perspectives</h5>
+    <div class="row">
+        <div class="col">
+    <img src="./image/preschool2.jpg">
+    <p>First Floor Lobby</p>
+
+    <div class="row">
+        <div class="col">
+    <img src="./image/second floor lobby.jpeg">
+    <p>Second Floor Lobby</p>
+
+    <div class="row">
+        <div class="col">
+    <img src="./image/class room.jpeg">
+    <p>Classroom</p>
+    
+    <div class="row">
+        <div class="col">
+    <img src="./image/steet view.jpeg">
+    <p>Street View</p>
+    
+</section>
+
+<section>
+    <h5>Materials</h5>
+    <div class="row">
+        <div class="col">
+    <img src="./image/material 1.jpeg">
+    <p>Children material Palette </p>
+
+    <div class="row">
+        <div class="col">
+    <img src="./image/material 2.jpeg">
+    <p>Adult material Palette </p>
+</section>
+
+     <section class="footer">
+        <p>
+          copyright &copy; 2022 by Shuyi Cen
+        </p>
+     </section>
+
+     
+     </body>
+  </html> 
