@@ -60,7 +60,7 @@ ul{
 }
 
 .active {
-    color: #fc036b;
+    color: #22608d;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -74,7 +74,7 @@ ul{
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: rgba(56, 50, 50, 0.45);
+    color: rgba(41, 168, 180, 0.45);
 }
 
 .nav-links{
