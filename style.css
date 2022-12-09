@@ -5,17 +5,6 @@
     text-decoration: none;
 }
 
-
-@font-face{
-    src:url(css/fonts/FuzzyBubbles-Regular.ttf);
-    font-family: FuzzyBubbles;
-}
-
-@font-face{
-    src:url(css/fonts/SourceCodePro-VariableFont_wght.ttf);
-    font-family: Var;
-}
-
 h1{
     font-size: 24px;
     font-family: Impact,'Arial', sans-serif;
@@ -179,6 +168,7 @@ h5{
 
 p{
     color: #1d1d30;
+
 }
 
 .projects.ctn{
