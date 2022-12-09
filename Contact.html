@@ -5,67 +5,32 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <title>Shuyi Cen's portfolio</title>
-      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="style.css">
    </head>
-   <body>
+   <body style="background-color: #c4ab94;">
     
-    <input type= "checkbox" id="toggle">
-
-    <nav>
-
-       <a class="navbar-brand" href="index.html">
-          <image src="image/logo2.png" width="80"></a>
-
-       <label class="navbar-toggler" for="toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-       </lable>
-
-          <ul class="nav-list">
-             <li class="nav-item">
-                <a class="nav-link">
-                   <a href="index.html">Home
-                   </a></li>
-
-                <li class="nav-item">
-                   <a class="nav-link">
-                   <a href="gallery.html">Gallery</a></li>
-                
-             <li class="nav-item">
-                <a class="nav-link">
-                <a href="about_me.html">About</a></li>
-
-             <li class="nav-item">
-                <a class="nav-link">
-                <a href="contact.html">Contact</a></li>
-       </ul>
-    </div>
-       </nav>
-
-      <!-- <header>
-         <div class="logo">
-            <main>
-               <a href="index.html">
-                  <image src="image/logo2.png" width="70">
-               </a>
-         </div>
-         <nav>
-         <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="Gallery.html">Gallery</a>
-         <ul>
-         <li><a href="Interior Design.html">Interior Design</a></li>
-         <li><a href="work progress.html">Work Progress</a></li>
-         <li><a href="drawings.html">Drawings</a></li>
-         </ul>
-         </li>
-         <li><a href="about_me.html">About</a></li>
-         <li><a href="Contact.html">Contact</a></li>
-         </ul>
-         </nav>
-         </main>
-      </header> -->
+       <!--Navbar-->
+       <nav class="navbar">
+        <h1 class="logo"><a href="index.html">SHUYI CEN</a></h1>
+        <ul class="nav-links">
+           <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li class="ctn"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="./image/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+    
+        <script>
+            const menuBtn = document.querySelector ('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+      
+            menuBtn.addEventListener('click',()=>{
+               navlinks.classList.toggle('mobile-menu')
+            })
+         </script>
+    
+    <!-- Navbar end -->
 <main>
 <br />
     <h3>Name:</h3>
@@ -101,7 +66,9 @@
         <li><image src="image/School.png" width="20">University of Pennsylvania</a></li>
     </ul>  
 </div>
-</main>
+
+
+
 
 <footer>
         <ul>

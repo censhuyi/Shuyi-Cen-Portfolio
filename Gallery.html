@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Shuyi Cen's portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body style="background-color: #c4ab94;">
-  
-    <!--Navbar-->
-    <nav class="navbar">
-    <h1 class="logo"><a href="index.html">SHUYI CEN</a></h1>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Shuyi Cen's Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body style="background-color: #eae2db;">
+
+      <!--Navbar-->
+      <nav class="navbar">
+      <h1 class="logo"><a href="index.html">SHUYI CEN</a></h1>
+      <ul class="nav-links">
+         <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+        <li class="ctn"><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="./image/menu-btn.png" alt="" class="menu-btn">
+      </nav>
+      <!-- end navbar -->
+
+ 
+   <script>
+      const menuBtn = document.querySelector ('.menu-btn')
+      const navlinks = document.querySelector('.nav-links')
+
+      menuBtn.addEventListener('click',()=>{
+         navlinks.classList.toggle('mobile-menu')
+      })
+   </script>
+
+
+<!-- design project -->
+<section class="projects">
+    <div class="title">
+        <h1>INTERIOR DESIGN</h1>
+        <div class="line"></div>
+    </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/preschool2.jpg">
+                <h4>Preschool</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/!Final coffee house 0002.jpg">
+                <h4>Coffee House</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+</section>
+
+        <!-- drawings -->
+        <section class="projects">
+            <div class="title">
+        <h1>DRAWINGS</h1>
+        <div class="line"></div>
+    </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/Chinese painting_.jpg">
+                <h4>Chinese painting_</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/Human Figure.jpg">
+                <h4>Coffee House</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+<!-- work progress -->
+
+ <section class="projects">
+            <div class="title">
+        <h1>WORK PROGRESS</h1>
+        <div class="line"></div>
+    </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/warm cold.png">
+                <h4>Chinese painting_</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/Linear Serpentine.jpg">
+                <h4>Coffee House</h4>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
 
 
 
-    <ul class="nav-links">
-       <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about me.html">About</a></li>
-      <li class="ctn"><a href="contact.html">Contact</a></li>
-    </ul>
-    <img src="./image/menu-btn.png" alt="" class="menu-btn">
-    </nav>
-
-    <script>
-        const menuBtn = document.querySelector ('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-  
-        menuBtn.addEventListener('click',()=>{
-           navlinks.classList.toggle('mobile-menu')
-        })
-     </script>
-
-<!-- Navbar end -->
 
 
 
@@ -39,6 +104,39 @@
 
 
 
-</body> 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+      <!-- <footer>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about me.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+         <div class="logo-2">
+            <a href="index.html">
+               <image src="image/logo2.png" width="70">
+            </a>
+         </div>
+         <div class="copyright">
+            <p>
+               &copy 2022 by Shuyi Cen
+            </p>
+         </div>
+      </footer>
+   </body>
 </html>
-
